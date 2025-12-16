@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Health Care Website</title>
+
+<style>
+/* ===== BASIC RESET ===== */
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+/* ===== HEADER (FLEX) ===== */
+.header {
+    background: #2c7be5;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.header li {
+    margin-left: 20px;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    background: white;
+    padding: 40px;
+    text-align: center;
+}
+
+/* ===== SERVICES (GRID) ===== */
+.services {
+    padding: 30px;
+    background: #eef3f9;
+}
+
+.services h2 {
+    text-align: center;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-box {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* ===== DOCTORS (FLOAT) ===== */
+.doctors {
+    padding: 30px;
+    background: white;
+}
+
+.doctor-card {
+    width: 30%;
+    float: left;
+    margin: 1.66%;
+    background: #f9f9f9;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* ===== CLEAR FLOAT ===== */
+.clear {
+    clear: both;
+}
+
+/* ===== APPOINTMENT (FLEX) ===== */
+.appointment {
+    padding: 30px;
+    background: #2c7be5;
+    color: white;
+}
+
+.form-box {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    background: white;
+    color: black;
+    padding: 20px;
+    width: 300px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 8px;
+    background: #2c7be5;
+    color: white;
+    border: none;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <h2>HealthCare+</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#doctors">Doctors</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+
+<!-- HERO  -->
+<div class="hero" id="home">
+    <h1>Your Health, Our Priority</h1>
+    <p>Quality medical care for you and your family</p>
+</div>
+
+<!-- SERVICES -->
+<div class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+        <div class="service-box">General Checkup</div>
+        <div class="service-box">Dental Care</div>
+        <div class="service-box">Emergency Service</div>
+        <div class="service-box">Cardiology</div>
+        <div class="service-box">Neurology</div>
+        <div class="service-box">Laboratory</div>
+    </div>
+</div>
+
+<!-- DOCTORS -->
+<div class="doctors" id="doctors">
+    <h2>Our Doctors</h2>
+
+    <div class="doctor-card">
+        <h3>Dr. Sharma</h3>
+        <p>Cardiologist</p>
+    </div>
+
+    <div class="doctor-card">
+        <h3>Dr. Mehta</h3>
+        <p>Dentist</p>
+    </div>
+
+    <div class="doctor-card">
+        <h3>Dr. Khan</h3>
+        <p>Neurologist</p>
+    </div>
+
+    <div class="clear"></div>
+</div>
+
+<!-- APPOINTMENT -->
+<div class="appointment" id="contact">
+    <h2 style="text-align:center;">Book Appointment</h2>
+    <div class="form-box">
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="text" placeholder="Phone Number">
+            <input type="date">
+            <button>Submit</button>
+        </form>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    <p>© 2025 HealthCare+. All rights reserved.</p>
+</div>
+
+</body>
+</html>
