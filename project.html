@@ -5,8 +5,7 @@
 <title>Health Care Website</title>
 
 <style>
-/* ===== BASIC RESET ===== */
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -16,10 +15,10 @@ body {
     background: #f4f4f4;
 }
 
-/* ===== HEADER (FLEX) ===== */
+/* ===== HEADER ===== */
 .header {
     background: #2c7be5;
-    color: white;
+    color: #fff;
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
@@ -37,21 +36,27 @@ body {
 }
 
 .header a {
-    color: white;
+    color: #fff;
     text-decoration: none;
 }
 
-/* ===== HERO SECTION ===== */
+/* ===== HERO ===== */
 .hero {
-    background: white;
+    background: rgb(227, 86, 86);
     padding: 40px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* ===== SERVICES (GRID) ===== */
+.hero img {
+    max-width: 300px;
+}
+
+/* ===== SERVICES ===== */
 .services {
     padding: 30px;
-    background: #eef3f9;
+    background: #3ffc7b;
 }
 
 .services h2 {
@@ -65,34 +70,34 @@ body {
 }
 
 .service-box {
-    background: white;
+    background: rgb(8, 234, 128);
     padding: 20px;
     border-radius: 5px;
     text-align: center;
 }
 
-/* ===== DOCTORS (FLOAT) ===== */
+/* ===== DOCTORS (UPDATED) ===== */
 .doctors {
     padding: 30px;
-    background: white;
-}
-
-.doctor-card {
-    width: 30%;
-    float: left;
-    margin: 1.66%;
-    background: #f9f9f9;
-    padding: 15px;
-    box-sizing: border-box;
+    background: rgb(176, 205, 198);
     text-align: center;
 }
 
-/* ===== CLEAR FLOAT ===== */
-.clear {
-    clear: both;
+.doctor-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
 }
 
-/* ===== APPOINTMENT (FLEX) ===== */
+.doctor-card {
+    background: #f9f9f9;
+    padding: 15px;
+    width: 30%;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+/* ===== APPOINTMENT ===== */
 .appointment {
     padding: 30px;
     background: #2c7be5;
@@ -148,10 +153,13 @@ button {
     </ul>
 </div>
 
-<!-- HERO  -->
+<!-- HERO -->
 <div class="hero" id="home">
-    <h1>Your Health, Our Priority</h1>
-    <p>Quality medical care for you and your family</p>
+    <div>
+        <h1>Trust us with your care</h1>
+        <p>Quality medical care for you and your family</p>
+    </div>
+    <img src="htmljpg.png" alt="Healthcare Image">
 </div>
 
 <!-- SERVICES -->
@@ -171,22 +179,22 @@ button {
 <div class="doctors" id="doctors">
     <h2>Our Doctors</h2>
 
-    <div class="doctor-card">
-        <h3>Dr. Sharma</h3>
-        <p>Cardiologist</p>
-    </div>
+    <div class="doctor-list">
+        <div class="doctor-card">
+            <h3>Dr. Sharma</h3>
+            <p>Cardiologist</p>
+        </div>
 
-    <div class="doctor-card">
-        <h3>Dr. Mehta</h3>
-        <p>Dentist</p>
-    </div>
+        <div class="doctor-card">
+            <h3>Dr. Mehta</h3>
+            <p>Dentist</p>
+        </div>
 
-    <div class="doctor-card">
-        <h3>Dr. Khan</h3>
-        <p>Neurologist</p>
+        <div class="doctor-card">
+            <h3>Dr. Khan</h3>
+            <p>Neurologist</p>
+        </div>
     </div>
-
-    <div class="clear"></div>
 </div>
 
 <!-- APPOINTMENT -->
@@ -195,7 +203,7 @@ button {
     <div class="form-box">
         <form>
             <input type="text" placeholder="Your Name">
-            <input type="text" placeholder="Phone Number">
+            <input type="number" placeholder="Phone Number">
             <input type="date">
             <button>Submit</button>
         </form>
@@ -204,7 +212,7 @@ button {
 
 <!-- FOOTER -->
 <div class="footer">
-    <p>© 2025 HealthCare+. All rights reserved.</p>
+    <p>&copy; 2025 HealthCare+. All rights reserved.</p>
 </div>
 
 </body>
